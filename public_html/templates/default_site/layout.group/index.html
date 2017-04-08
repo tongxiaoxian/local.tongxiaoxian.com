@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/swiper.css"/>
 <link rel="stylesheet" type="text/css" href="{site_url}libraries/css/royalslider.css">
 <link rel="stylesheet" type="text/css" href="{site_url}libraries/css/skins/default/rs-default.css">
-<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7558074/7349772/css/fonts.css" />
+<!-- <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7558074/7349772/css/fonts.css" /> -->
 {/exp:minimee:css}
 
 
@@ -206,8 +206,9 @@ li.underline a {
 
 main {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /*justify-content: flex-start;*/
+  align-items: flex-start;
   margin-left: 15px;
   margin-right: 15px;
   flex: 1;
@@ -228,6 +229,12 @@ main div.gallery {
 main img {
   width: 800px;
   margin-bottom: 2em;
+}
+
+main.project {
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;  
 }
 
 /* ==========================================================================
@@ -346,8 +353,7 @@ footer p a:link, footer p a:visited {
   </footer>
 
   <div id="saver">
-      <h1>童孝贤
-      <br>摄影事务所</h1>
+      <h1>童孝贤</h1>
   </div>
 
 {exp:minimee:js}

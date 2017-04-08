@@ -3,13 +3,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>童孝贤的摄影事务所</title>
+
+<title>{layout:title}</title>
 
 {exp:minimee:css}
 <link rel="stylesheet" type="text/css" href="{site_url}libraries/css/normalize.css"/>
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/swiper.css"/>
 <link rel="stylesheet" type="text/css" href="{site_url}libraries/css/royalslider.css">
-<link rel="stylesheet" type="text/css" href="{site_url}libraries/css/skins/default/rs-default.css"> 
+<link rel="stylesheet" type="text/css" href="{site_url}libraries/css/skins/default/rs-default.css">
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7558074/7349772/css/fonts.css" />
 {/exp:minimee:css}
 
 
@@ -50,7 +52,7 @@ ol {
 }
 
 body {
-  font-family: "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 62.5%;
   background-color: #eeedeb;
   position: relative;
@@ -104,44 +106,10 @@ nav, main, footer {
   margin-right: 20px;
 }
 
-header, #saver {
+#saver {
   padding: 25px;
 } 
 
-
-/* ==========================================================================
-   Header
-   ========================================================================== */
-
-header {
-  /*display: none;*/
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #FFF;
-  z-index: 1;
-  cursor: pointer;
-}
-
-header div.text {
-  max-width: 50%;
-  position: fixed;
-  bottom: 120px;
-}
-
-header h1 {
-  letter-spacing: 1px;
-  margin-bottom: 2px;
-
-}
-
-header > p {
-  margin-top: 125px;
-  max-width: 500px;
-}
 
 /* ==========================================================================
    Screen Saver
@@ -156,16 +124,27 @@ header > p {
   right: 0;
   background-color: rgba(0, 0, 0, 0.9);
   color: #FFF;
-  z-index: 10;
+  z-index: 1;
   cursor: pointer;
 }
 
-#saver h1 {
-  font-weight: bold;
-  position: absolute;
-  bottom: 0;
-  font-size: 5em;
+#saver div.text {
+  max-width: 50%;
+  position: fixed;
+  bottom: 120px;
 }
+
+#saver h1 {
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+
+}
+
+#saver > p {
+  margin-top: 125px;
+  max-width: 500px;
+}
+
 
 /* ==========================================================================
    General Links
@@ -348,7 +327,7 @@ footer p a:link, footer p a:visited {
       margin-right: 30px;
     }
 
-    header, #saver {
+    #saver {
       padding: 30px;
     } 
 
@@ -359,18 +338,32 @@ footer p a:link, footer p a:visited {
 </head>
 
 <body>
-  
+
+  <div id="saver">
+
+    <p>印铺从创立之初就不想做一个简单的打印输出工作室。我们喜欢与对影像有自己独立见解的你合作，我们认为你的作品也是我们的作品。从印制明信片到画册设计，每个人都能获得最充分的输出建议。一如动人的生命特质平静、优雅、绵长，坚持质感细腻的纸张；丰盈生香的油墨；沉静不苟的匠心将你的独家记忆妥帖安放。高品质的影像输出服务，就这样一方所在，等你岁岁长相见。</p>
+
+    <div class="text">
+      <h1>屈家印铺</h1>
+      <p>营业时间：周一到周日 / 1:00pm–10:30pm<br>
+        微信公众号：daquimage<br>
+        电邮：hello@da-qu.com<br>
+      </p>
+    </div>
+
+  </div>
+
   <nav>
     
     <ul>
-      <li {if segment_1 == 'photography'}class="underline">{/if}<span><a href="{path="photography/index"}">拍摄作品</a></span></li>
-      <li {if segment_1 == 'research'}class="underline"{/if}><span><a href="{path="research/index"}">影像研究</a></span></li>
-      <li {if segment_1 == '' OR segment_1 == 'work'}class="underline"{/if}><span><a class="selected" {/if}href="{path="work/index"}">已完成</a></span></li>
+      <li {if segment_1 == '' OR segment_1 == 'photography'}class="underline">{/if}<span><a href="{path="photography/index"}">拍摄作品</a></span></li>
+      <li {if segment_1 == 'work'}class="underline"{/if}><span><a class="selected" {/if}href="{path="work/index"}">已完成</a></span></li>
+      <li {if segment_1 == 'research'}class="underline"{/if}><span><a href="{path="research/index"}">影像研究</a></span></li>      
     </ul>
 
     <ul>
-      <li {if segment_1 == 'taobao'}class="underline" {/if}><span><a href="{path="about/index"}">FACEBOOK</a></span></li>
-      <li {if segment_1 == 'public'}class="underline" {/if}><span><a href="{path="contact/index"}">微信公众号</a></span></li>      
+      <li {if segment_1 == 'taobao'}class="underline" {/if}><span><a href="{path="contact/index"}">工作联系</a></span></li>
+      <li {if segment_1 == 'public'}class="underline" {/if}><span><a href="{path="wechat/index"}">微信公众号</a></span></li>  
     </ul>
 
   </nav>
@@ -378,7 +371,6 @@ footer p a:link, footer p a:visited {
     {layout:contents}
   
   <footer>
-
       <p>&#169;2017 童孝贤的摄影事务所</p>
   </footer>
 

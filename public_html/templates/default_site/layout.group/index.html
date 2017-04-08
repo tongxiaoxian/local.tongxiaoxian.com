@@ -339,31 +339,17 @@ footer p a:link, footer p a:visited {
 
 <body>
 
-  <div id="saver">
-
-    <p>印铺从创立之初就不想做一个简单的打印输出工作室。我们喜欢与对影像有自己独立见解的你合作，我们认为你的作品也是我们的作品。从印制明信片到画册设计，每个人都能获得最充分的输出建议。一如动人的生命特质平静、优雅、绵长，坚持质感细腻的纸张；丰盈生香的油墨；沉静不苟的匠心将你的独家记忆妥帖安放。高品质的影像输出服务，就这样一方所在，等你岁岁长相见。</p>
-
-    <div class="text">
-      <h1>屈家印铺</h1>
-      <p>营业时间：周一到周日 / 1:00pm–10:30pm<br>
-        微信公众号：daquimage<br>
-        电邮：hello@da-qu.com<br>
-      </p>
-    </div>
-
-  </div>
-
   <nav>
     
     <ul>
       <li {if segment_1 == '' OR segment_1 == 'photography'}class="underline">{/if}<span><a href="{path="photography/index"}">拍摄作品</a></span></li>
-      <li {if segment_1 == 'work'}class="underline"{/if}><span><a class="selected" {/if}href="{path="work/index"}">已完成</a></span></li>
+      <li {if segment_1 == 'archive'}class="underline"{/if}><span><a class="selected" {/if}href="{path="archive/index"}">已完成</a></span></li>
       <li {if segment_1 == 'research'}class="underline"{/if}><span><a href="{path="research/index"}">影像研究</a></span></li>      
     </ul>
 
     <ul>
-      <li {if segment_1 == 'taobao'}class="underline" {/if}><span><a href="{path="contact/index"}">工作联系</a></span></li>
-      <li {if segment_1 == 'public'}class="underline" {/if}><span><a href="{path="wechat/index"}">微信公众号</a></span></li>  
+      <li {if segment_1 == 'contact'}class="underline" {/if}><span><a href="{path="contact/index"}">工作联系</a></span></li>
+      <li {if segment_1 == 'wechat'}class="underline" {/if}><span><a href="{path="wechat/index"}">微信公众号</a></span></li>  
     </ul>
 
   </nav>
@@ -373,6 +359,20 @@ footer p a:link, footer p a:visited {
   <footer>
       <p>&#169;2017 童孝贤的摄影事务所</p>
   </footer>
+
+  <div id="saver">
+
+    <!-- <p>童孝贤的摄影事务所从创立之初就不想做一个简单的打印输出工作室。我们喜欢与对影像有自己独立见解的您合作，我们认为你的作品也是我们的作品。从广告拍摄到画册设计，我们提供最充分的见解。一如动人的生命特质平静、优雅、绵长，坚持质感细腻的纸张；丰盈生香的油墨；沉静不苟的匠心将你的独家记忆妥帖安放。高品质的影像输出服务，就这样一方所在，等你岁岁长相见。</p> -->
+
+    <div class="text">
+      <h1>童孝贤的摄影事务所</h1>
+      <p>工作时间：周一到周五 / 1:00pm–10:30pm<br>
+        微信公众号：TONGXIAOXIAN<br>
+        电邮：hello@tongxiaoxian.com<br>
+      </p>
+    </div>
+
+  </div>
 
 {exp:minimee:js}
 <script type="text/javascript" src="{site_url}libraries/js/jquery-1.11.3.min.js"></script>

@@ -42,7 +42,7 @@ $(document).ready(function() {
 
         s_saver = setTimeout(function() {
             $('#saver').fadeIn(900);
-        }, 10000);
+        }, 20000);
 
         $('#saver').fadeOut(500);
     });
@@ -52,7 +52,7 @@ $(document).ready(function() {
 
         s_saver = setTimeout(function() {
            $('#saver').fadeIn(900);
-        }, 10000);
+        }, 20000);
 
         $('#saver').fadeOut(500);
     });

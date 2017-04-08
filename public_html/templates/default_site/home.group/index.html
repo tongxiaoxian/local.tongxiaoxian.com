@@ -1,318 +1,110 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>童孝贤的摄影事务所</title>
-<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/swiper.css"/>
+{layout="layout/index" title="屈家印铺｜完成作品｜印务工作室｜广州&amp;深圳&amp;三亚&amp;海口"}
 
-<style>
-@charset "utf-8";
-/* CSS Document */
-/* ==========================================================================
-   Body
-   ========================================================================== */
-*, *:before, *:after {
-  box-sizing: border-box;
-  -moz-user-select: text;  
-  -webkit-user-select: text;  
-  -ms-user-select: text;
-  -moz-touch-callout: none;
-  -webkit-touch-callout: none;
-  -ms-touch-callout: none;
-}
-p {
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-}
-ul {
-  -webkit-padding-start: 0px;
-  padding:0;
-  margin-top: 0;
-}
-ol {
-  padding: 0;
-  margin: 0;
-  list-style-position:inside;
-}
-body {
-  font-family: "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-size: 62.5%;
-  background-color: #eeedeb;
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-/* ==========================================================================
-   General Typography
-   ========================================================================== */
-*, *:before, *:after {
-  letter-spacing: 1px;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-size: 1.1em;
-}
-* > a, * > span {
-  font-size: 1em;
-  /*letter-spacing: 1px;*/
-}
-p, figcaption, time, blockquote, li {
-  display: block;
-  font-size: 1.1em;
-  line-height: 1.9;
-}
-img {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-}
-#backstretch{
-  display:none;
-}
-/* ==========================================================================
-   General Layout
-   ========================================================================== */
-nav, main, footer {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-header, #saver {
-  padding: 25px;
-} 
-/* ==========================================================================
-   Header
-   ========================================================================== */
-header {
-  /*display: none;*/
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #FFF;
-  z-index: 1;
-  cursor: pointer;
-}
-header div.text {
-  max-width: 50%;
-  position: fixed;
-  bottom: 120px;
-}
-header h1 {
-  letter-spacing: 1px;
-  margin-bottom: 2px;
-}
-header > p {
-  margin-top: 125px;
-  max-width: 500px;
-}
-/* ==========================================================================
-   Screen Saver
-   ========================================================================== */
-#saver {
-  display: none;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #FFF;
-  z-index: 10;
-  cursor: pointer;
-}
-#saver h1 {
-  font-weight: bold;
-  position: absolute;
-  bottom: 0;
-  font-size: 5em;
-}
-/* ==========================================================================
-   General Links
-   ========================================================================== */
-a:link, a:visited {
-  color: #000;
-  text-decoration: none;
-}
-a:hover {
-  border-bottom: none;
-  font-weight: bold;
-}
-a:active {
-  border-bottom: none;
-}
-/* ==========================================================================
-   Nav
-   ========================================================================== */
-nav {
-  margin-top: 8px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: space-between;
-}
-nav ul {  
-  display: flex;
-}
-nav ul li {
-  margin-right: 1em;
-  margin-top: 1em;
-  list-style: none;
-}
-nav ul li:last-child {
-  margin-right: 0em;
-}
-nav ul li a:link, nav ul li a:visited {
-  color: #AAA;
-}
-nav ul li.underline a:link, nav ul li.underline a:visited {
-  font-style: italic;
-}
-nav ul li a:hover, nav ul li a:active {
-  font-weight: normal;
-  font-style: italic;
-}
-li.underline span {
-  position: relative;
-  top: -10px;
-  border-bottom: 8px solid rgba(209, 230, 223, 0.9);
-}
-li.underline a {
-  position: relative;
-  top: 10px;
-}
-/* ==========================================================================
-   Main
-   ========================================================================== */
-main {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-left: 15px;
-  margin-right: 15px;
-  flex: 1;
-}
-main p {
-  max-width: 600px;
-}
-main div.project {
-  margin-bottom: 2em;
-}
-main div.gallery {
-  margin-bottom: 2em;
-}
-main img {
-  width: 800px;
-  margin-bottom: 2em;
-}
-/* ==========================================================================
-   Table
-   ========================================================================== */
-div.container {
-  max-width: 500px;
-}
-p.instruction {
-  letter-spacing: 5px;
-}
-table {
-  width: 100%;
-  table-layout: fixed;
-  margin-bottom: 5em;
-}
-table caption {
-  text-align: left;
-  padding-bottom: 2em;
-}
-table th, table td {
-  font-size: 1.1em;
-  padding-bottom: 4px;
-  padding-top: 4px;
-}
-table th {
-  font-weight: normal;
-  padding-bottom: 5px;
-}
-table th.year, table th.type {
-  width: 25%;
-}
-table th.type, table td.type {
-  width: 20%;
-  text-align: right;
-}
-table thead tr {
-  text-align: left;
-} 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-footer {
-  margin-top: 5em;
-  margin-bottom: 8px;
-  color: #AAA;
-  display: flex;
-  justify-content: space-between;  
-}
-footer h1 {
-  font-weight: normal;
-}
-footer p {
-  /*font-size: 1em; */
-}
-footer p a:link, footer p a:visited {
-  color: #AAA;
-}
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-@media screen and (min-width: 1001px) {
-    nav, main, footer {
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-    header, #saver {
-      padding: 30px;
-    } 
-}
-</style>
+<header>
 
-</head>
+  <p>印铺从创立之初就不想做一个简单的打印输出工作室。我们喜欢与对影像有自己独立见解的你合作，我们认为你的作品也是我们的作品。从印制明信片到画册设计，每个人都能获得最充分的输出建议。一如动人的生命特质平静、优雅、绵长，坚持质感细腻的纸张；丰盈生香的油墨；沉静不苟的匠心将你的独家记忆妥帖安放。高品质的影像输出服务，就这样一方所在，等你岁岁长相见。</p>
 
-<body>
-  
-  <div id="saver">
-      <h1>摄影师童孝贤</h1>
+  <div class="text">
+    <h1>屈家印铺</h1>
+    <p>营业时间：周一到周日 / 1:00pm–10:30pm<br>
+      微信公众号：daquimage<br>
+      电邮：hello@da-qu.com<br>
+    </p>
   </div>
-    
-  <nav>
-    
-    <ul>
-      <li {if segment_1 == 'making'}class="underline">{/if}<span><a href="{path="making/index"}">最新作品</a></span></li>
-      <li {if segment_1 == 'service'}class="underline"{/if}><span><a href="{path="service/index"}">服务及价格</a></span></li>
-      <li {if segment_1 == '' OR segment_1 == 'work'}class="underline"{/if}><span><a class="selected" {/if}href="{path="work/index"}">已完成</a></span></li>
-    </ul>
 
-    <ul>
-      <li {if segment_1 == 'taobao'}class="underline" {/if}><span><a href="{path="taobao/index"}">INSTAGRAM</a></span></li>
-      <li {if segment_1 == 'public'}class="underline" {/if}><span><a href="{path="public/index"}">微信公众号</a></span></li>      
-    </ul>
+</header>
 
-  </nav>
-    
-    {layout:contents}
-  
-  <footer>
+<main>
 
-      <!-- <p>营业时间：周一至周日 / 1:00pm–10:30pm<br> -->
-      &#169;2017 童孝贤的摄影事务所</p>
-  </footer>
+	<div class="container">
 
-<script type="text/javascript" src="{site_url}libraries/js/jquery-1.11.3.min.js"></script>
+	    <p class="instruction">点击名称查看</p>
 
-</body>
+	    <table>
 
-</html>
+	        <caption>LATEST</caption>
+
+	        <thead>
+	            <tr>
+	                <th class="year" scope="col">时间</th>
+	                <th class="name" scope="col">名称</th>
+	                <th class="type" scope="col">类别</th>
+	            </tr>
+	        </thead>
+
+	        <tbody>  
+	            <tr>
+	                <td>2016</td>
+	                <td><a href="#">走，去台湾</a></td>
+	                <td class="type">微信写真书</td>
+	            </tr>
+	            
+	            <tr>
+	                <td>2016</td>
+	                <td><a href="#"> 二年级的暑假</a></td>
+	                <td class="type">家庭影集</td>
+	            </tr>           
+
+	            <tr>
+	                <td>2016</td>
+	                <td><a href="#">江南</a></td>
+	                <td class="type">明信片</td>
+	            </tr>
+
+	            <tr>
+	                <td>2016</td>
+	                <td><a href="#">家书</a></td>
+	                <td class="type">家庭影集</td>
+	            </tr>       
+
+	            <tr>
+	                <td>2016</td>
+	                <td><a href="#">面包屋与书店</a></td>
+	                <td class="type">微信写真书</td>
+	            </tr>    
+
+	            <tr>
+	                <td>2016</td>
+	                <td><a href="{path="work/content"}">六月</a></td>
+	                <td class="type">家庭影集</td>
+	            </tr>    
+
+	        </tbody>
+
+	    </table>
+
+	    <p class="instruction">存档</p>
+
+	    <table>
+
+	        <caption>ARCHIVE</caption>
+
+	        <thead>
+	            <tr>
+	                <th class="year" scope="col">时间</th>
+	                <th class="name" scope="col">名称</th>
+	                <th class="type" scope="col">类别</th>
+	            </tr>
+	        </thead>
+
+	        <tbody>
+
+	            <tr>
+	                <td>2009-2011</td>
+	                <td class="underline"><span><a href="#">中粮《悦活》杂志</a></span></td>
+	                <td class="type">出版物</td>
+	            </tr>
+
+	            <tr>
+	                <td>2008-2009</td>
+	                <td class="underline"><span><a href="#">WPI Architecture Highlight</a></span></td>
+	                <td class="type">画册</td>
+	            </tr>
+
+	        </tbody>
+
+	    </table>
+
+	</div>
+
+</main>	

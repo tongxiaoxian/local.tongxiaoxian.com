@@ -95,7 +95,7 @@
 
 $assign_to_config['site_url'] = "http://www.tongxiaoxian.com/";
 
-$assign_to_config['tmpl_file_basepath']   = "/Users/tongxiaoxian/Sites/www.tongxiaoxian.com/public_html/templates";
+$assign_to_config['tmpl_file_basepath']   = "/var/www/html/tongxiaoxian.com/public_html/templates";
 
 $assign_to_config['upload_preferences'] = array(
 

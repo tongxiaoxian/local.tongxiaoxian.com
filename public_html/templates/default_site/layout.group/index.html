@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/swiper.css"/>
 <link rel="stylesheet" type="text/css" href="{site_url}libraries/css/royalslider.css">
 <link rel="stylesheet" type="text/css" href="{site_url}libraries/css/skins/default/rs-default.css">
-<!-- <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7558074/7349772/css/fonts.css" /> -->
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7558074/7349772/css/fonts.css" />
 {/exp:minimee:css}
 
 
@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-p, figcaption, time, blockquote, li {
+p, figcaption, time, blockquote {
   display: block;
   font-size: 1.1em;
   line-height: 1.9;
@@ -102,13 +102,13 @@ nav, main, footer {
   margin-right: 20px;
 }
 
-#saver {
-  padding: 25px;
-} 
-
 /* ==========================================================================
    Screen Saver
    ========================================================================== */
+
+#saver {
+  padding: 25px;
+} 
 
 #saver {
   display: none;
@@ -159,25 +159,26 @@ nav {
   margin-right: 15px;
   margin-bottom: 100px;
   display: flex;
-  justify-content: space-between;
 }
 
 nav ul {  
   display: flex;
+  /*margin-right: 1em;*/
 }
 
 nav ul li {
+  font-size: 1.1em;
   margin-right: 1em;
   margin-top: 1em;
   list-style: none;
 }
 
-nav ul li:last-child {
+nav ul.second li:last-child {
   margin-right: 0em;
 }
 
 nav ul li a:link, nav ul li a:visited {
-  color: #AAA;
+  /*color: #AAA;*/
 }
 
 nav ul li.underline a:link, nav ul li.underline a:visited {
@@ -323,6 +324,10 @@ footer p a:link, footer p a:visited {
       padding: 30px;
     } 
 
+    nav {
+      justify-content: space-between;
+    }
+
 }
 
 </style>
@@ -334,14 +339,15 @@ footer p a:link, footer p a:visited {
   <nav>
     
     <ul>
-      <li {if segment_1 == '' OR segment_1 == 'photography'}class="underline">{/if}<span><a href="{path="photography/index"}">拍摄作品</a></span></li>
-      <li {if segment_1 == 'archive'}class="underline"{/if}><span><a class="selected" {/if}href="{path="archive/index"}">已完成</a></span></li>
-      <li {if segment_1 == 'research'}class="underline"{/if}><span><a href="{path="research/index"}">影像研究</a></span></li>      
+      <!-- <li {if segment_1 == '' OR segment_1 == 'photography'}class="underline">{/if}<span><a href="{path="photography/index"}">拍摄作品</a></span></li> -->
+      <li {if segment_1 == 'archive'}class="underline"{/if}><span><a class="selected" {/if}href="{path="work/index"}">I.摄影作品</a></span></li>
+      <li {if segment_1 == 'research'}class="underline"{/if}><span><a href="{path="research/index"}">II.影像研究</a></span></li>
+
     </ul>
 
-    <ul>
-      <li {if segment_1 == 'contact'}class="underline" {/if}><span><a href="{path="contact/index"}">工作联系</a></span></li>
-      <li {if segment_1 == 'wechat'}class="underline" {/if}><span><a href="{path="wechat/index"}">微信公众号</a></span></li>  
+    <ul class="second">
+      <li {if segment_1 == 'contact'}class="underline" {/if}><span><a href="{path="contact/index"}">III.工作联系</a></span></li>
+      <li {if segment_1 == 'wechat'}class="underline" {/if}><span><a href="{path="wechat/index"}">IV.微信公众号</a></span></li>  
     </ul>
 
   </nav>
@@ -349,7 +355,7 @@ footer p a:link, footer p a:visited {
     {layout:contents}
   
   <footer>
-      <p>&#169;2017 童孝贤的摄影事务所</p>
+      <p>&#169;2017 童孝贤 - 摄影事务所</p>
   </footer>
 
   <div id="saver">

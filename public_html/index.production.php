@@ -93,9 +93,9 @@
 //	$assign_to_config['site_404'] = '';
 //	$assign_to_config['global_vars'] = array(); // This array must be associative
 
-$assign_to_config['site_url'] = "http://local.tongxiaoxian.com/";
+$assign_to_config['site_url'] = "http://www.tongxiaoxian.com/";
 
-$assign_to_config['tmpl_file_basepath']   = "/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/public_html/templates";
+$assign_to_config['tmpl_file_basepath']   = "/Users/tongxiaoxian/Sites/www.tongxiaoxian.com/public_html/templates";
 
 $assign_to_config['upload_preferences'] = array(
 

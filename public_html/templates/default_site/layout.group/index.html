@@ -330,7 +330,7 @@ footer h1 {
 }
 
 footer p {
-  /*font-size: 1em; */
+  font-size: 1.1em; 
 }
 
 footer p a:link, footer p a:visited {
@@ -360,21 +360,17 @@ footer p a:link, footer p a:visited {
 
 <body>
   
-  <div id="saver">
-      <h1>屈家印铺</h1>
-  </div>
-    
   <nav>
     
     <ul>
-      <li {if segment_1 == 'making'}class="underline">{/if}<span><a href="{path="making/index"}">摄影作品</a></span></li>
-      <li {if segment_1 == 'service'}class="underline"{/if}><span><a href="{path="service/index"}">服务及价格</a></span></li>
+      <li {if segment_1 == 'photography'}class="underline">{/if}<span><a href="{path="photography/index"}">拍摄作品</a></span></li>
+      <li {if segment_1 == 'research'}class="underline"{/if}><span><a href="{path="research/index"}">影像研究</a></span></li>
       <li {if segment_1 == '' OR segment_1 == 'work'}class="underline"{/if}><span><a class="selected" {/if}href="{path="work/index"}">已完成</a></span></li>
     </ul>
 
     <ul>
-      <li {if segment_1 == 'taobao'}class="underline" {/if}><span><a href="{path="taobao/index"}">INSTAGRAM</a></span></li>
-      <li {if segment_1 == 'public'}class="underline" {/if}><span><a href="{path="public/index"}">微信</a></span></li>      
+      <li {if segment_1 == 'taobao'}class="underline" {/if}><span><a href="{path="about/index"}">FACEBOOK</a></span></li>
+      <li {if segment_1 == 'public'}class="underline" {/if}><span><a href="{path="contact/index"}">微信公众号</a></span></li>      
     </ul>
 
   </nav>

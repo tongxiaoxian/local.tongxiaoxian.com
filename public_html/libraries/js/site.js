@@ -41,37 +41,9 @@ $(document).ready(function() {
   $('body').swipe({
     //Generic swipe handler for all directions
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-        $('header, #saver').velocity('transition.fadeOut', {duration: 800});
+        $('header').velocity('transition.fadeOut', {duration: 800});
     },
         threshold:0,
         fingers:'all'
     });
 });
-
-/* Saver js */
-$(document).ready(function() {
-
-    var s_saver;
-
-    $('body').mousemove(function() {
-        clearTimeout(s_saver);
-
-        s_saver = setTimeout(function() {
-            $('#saver').fadeIn(900);
-        }, 30000);
-
-        $('#saver').fadeOut(500);
-    });
-
-    $('body').keydown(function() {
-        clearTimeout(s_saver);
-
-        s_saver = setTimeout(function() {
-           $('#saver').fadeIn(900);
-        }, 30000);
-
-        $('#saver').fadeOut(500);
-    });
-
-});
-

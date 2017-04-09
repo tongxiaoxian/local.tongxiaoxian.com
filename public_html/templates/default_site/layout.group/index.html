@@ -69,7 +69,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 * > a, * > span {
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, figcaption, time, blockquote, li {
   display: block;
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.9;
 }
 
@@ -98,7 +98,7 @@ img {
    General Layout
    ========================================================================== */
 
-nav, main, footer {
+nav, main, header {
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -160,7 +160,7 @@ nav {
   margin-right: 15px;
   margin-bottom: 100px;
   display: flex;
-  justify-content: space-between;      
+  justify-content: space-between;
 }
 
 nav ul {  
@@ -179,11 +179,11 @@ nav ul.second li:last-child {
 }
 
 nav ul li a:link, nav ul li a:visited {
-  /*color: #999;*/
+  color: #555;
 }
 
 nav ul li.underline a:link, nav ul li.underline a:visited {
-	/*color: #fff;*/
+	color: #333;
   /*font-weight: bold;*/
   /*font-style: italic;*/
 }
@@ -217,7 +217,7 @@ main {
   /*align-items: flex-start;*/
   margin-left: 15px;
   margin-right: 15px;
-  flex: 1;
+  /*flex: 1;*/
 }
 
 main p {
@@ -237,10 +237,31 @@ main img {
   margin-bottom: 2em;
 }
 
-main.project {
+main.commercial {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;  
+}
+
+main.schedule {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+main.schedule div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+
+main.schedule div ul {
+  text-align: right;
+}
+
+main.schedule div h2 {
+  /*line-height: 0;*/
 }
 
 /* ==========================================================================
@@ -267,7 +288,7 @@ table caption {
 }
 
 table th, table td {
-  font-size: 1.1em;
+  font-size: 1.2em;
   padding-bottom: 4px;
   padding-top: 4px;
 }
@@ -294,25 +315,24 @@ table thead tr {
    Footer
    ========================================================================== */
 
-footer {
+header {
   margin-top: 5em;
-  margin-bottom: 12px;
+  margin-bottom: 2em;
   margin-left: 15px;
-
   display: flex;
   justify-content: space-between;  
 }
 
-footer h1 {
+header h1 {
   font-weight: normal;
 }
 
-footer p {
-  font-size: 1.1em; 
+header p {
+  font-size: 1.2em; 
 }
 
-footer p a:link, footer p a:visited {
-  /*color: #AAA;*/
+header p a:link, header p a:visited {
+  color: #AAA;
 }
 
 /* ==========================================================================
@@ -321,7 +341,7 @@ footer p a:link, footer p a:visited {
 
 @media screen and (min-width: 1001px) {
 
-    nav, main, footer {
+    nav, main, header {
       margin-left: 30px;
       margin-right: 30px;
     }
@@ -347,7 +367,7 @@ footer p a:link, footer p a:visited {
     <ul>
       <!-- <li {if segment_1 == '' OR segment_1 == 'photography'}class="underline">{/if}<span><a href="{path="photography/index"}">拍摄作品</a></span></li> -->
       <li {if segment_1 == '' OR segment_1 == 'commercial'}class="underline"{/if}><span><a class="selected" {/if}href="{path="commercial/index"}">I.<br>商业作品</a></span></li>
-      <li {if segment_1 == 'study'}class="underline"{/if}><span><a href="{path="study/index"}">II.<br>影像研究</a></span></li>
+      <li {if segment_1 == 'study'}class="underline"{/if}><span><a href="{path="study/index"}">II.<br>个人作品</a></span></li>
 
     </ul>
 
@@ -360,9 +380,9 @@ footer p a:link, footer p a:visited {
     
     {layout:contents}
 
-  <footer>
-      <p>童孝贤的摄影研究所</p>
-  </footer>
+  <header>
+      <p><a href="{site_url}">童孝贤的摄影研究所</a></p>
+  </header>
 
 {exp:minimee:js}
 <script type="text/javascript" src="{site_url}libraries/js/jquery-1.11.3.min.js"></script>

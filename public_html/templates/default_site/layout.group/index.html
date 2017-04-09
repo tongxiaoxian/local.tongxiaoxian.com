@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 p, figcaption, time, blockquote, li {
   display: block;
   font-size: 1.2em;
-  line-height: 1.9;
+  line-height: 2;
 }
 
 p {
@@ -130,7 +130,8 @@ header h1 {
 }
 
 header p {
-  font-size: 1.1em; 
+  font-size: 1.2em;
+  margin-bottom: 1em;
 }
 
 header p a:link, header p a:visited {
@@ -167,11 +168,11 @@ nav ul.second li:last-child {
 }
 
 nav ul li a:link, nav ul li a:visited {
-  color: #555;
+  color: #AAA;
 }
 
 nav ul li.underline a:link, nav ul li.underline a:visited {
-	color: #333;
+	color: #000;
   /*font-weight: bold;*/
   /*font-style: italic;*/
 }
@@ -213,18 +214,18 @@ main p {
    Main Commercial
    ========================================================================== */
 
-main.commercial {
+main.commercial article {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;  
 }
 
-main.commercial div.project {
+main.commercial article div.project {
   margin-bottom: 2em;
 }
 
-main.commercial div.gallery {
+main.commercial article div.gallery {
   
 }
 
@@ -361,13 +362,13 @@ table thead tr {
   <nav>
     
     <ul>
-      <li {if segment_1 == '' OR segment_1 == 'commercial'}class="underline"{/if}><span><a class="selected" {/if}href="{path="commercial/index"}">I.<br>商业作品</a></span></li>
-      <li {if segment_1 == 'personal'}class="underline"{/if}><span><a href="{path="personal/index"}">II.<br>个人作品</a></span></li>
+      <li {if segment_1 == 'commercial'}class="underline"{/if}><span><a class="selected" {/if}href="{path="commercial/index"}">I.<br>摄影作品</a></span></li>
+      <li {if segment_1 == 'personal'}class="underline"{/if}><span><a href="{path="personal/index"}">II.<br>影像研究</a></span></li>
     </ul>
 
     <ul class="second">
       <li {if segment_1 == 'studio'}class="underline" {/if}><span><a href="{path="studio/index"}">III.<br>工作室及暗房</a></span></li>  
-      <li {if segment_1 == 'schedule'}class="underline" {/if}><span><a href="{path="schedule/index"}">IV.<br>日程安排</a></span></li>
+      <li {if segment_1 == '' OR segment_1 == 'schedule'}class="underline" {/if}><span><a href="{path="schedule/index"}">IV.<br>日程安排</a></span></li>
     </ul>
 
   </nav>
@@ -375,7 +376,7 @@ table thead tr {
   {layout:contents}
 
   <header>
-      <p><a href="{site_url}">童孝贤的摄影研究所</a></p>
+      <p><a href="{site_url}">童孝贤的摄影事务所</a></p>
   </header>
 
 <script type="text/javascript" src="{site_url}libraries/js/jquery-1.11.3.min.js"></script>

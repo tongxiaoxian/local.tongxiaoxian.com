@@ -362,13 +362,13 @@ table thead tr {
   <nav>
     
     <ul>
-      <li {if segment_1 == 'commercial'}class="underline"{/if}><span><a class="selected" {/if}href="{path="commercial/index"}">I.<br>摄影作品</a></span></li>
+      <li {if segment_1 == '' OR segment_1 == 'commercial'}class="underline"{/if}><span><a class="selected" {/if}href="{path="commercial/index"}">I.<br>摄影作品</a></span></li>
       <li {if segment_1 == 'personal'}class="underline"{/if}><span><a href="{path="personal/index"}">II.<br>影像研究</a></span></li>
     </ul>
 
     <ul class="second">
       <li {if segment_1 == 'studio'}class="underline" {/if}><span><a href="{path="studio/index"}">III.<br>工作室及暗房</a></span></li>  
-      <li {if segment_1 == '' OR segment_1 == 'schedule'}class="underline" {/if}><span><a href="{path="schedule/index"}">IV.<br>日程安排</a></span></li>
+      <li {if segment_1 == 'schedule'}class="underline" {/if}><span><a href="{path="schedule/index"}">IV.<br>日程安排</a></span></li>
     </ul>
 
   </nav>

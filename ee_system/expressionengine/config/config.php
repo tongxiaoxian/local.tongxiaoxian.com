@@ -47,8 +47,10 @@ $config['photo_path'] = "/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/public
 $config['sig_img_url'] = "http://local.tongxiaoxian.com/assets/images/signature_attachments/";
 $config['sig_img_path'] = "/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/public_html/assets/images/signature_attachments/";
 
+$config['index_page'] = 'index.php';
 
 // END EE config items
+
 
 /*
 |--------------------------------------------------------------------------

@@ -8,7 +8,9 @@
 
 <link rel="stylesheet" type="text/css" href="{site_url}libraries/css/normalize.css"/>
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/swiper.css"/>
-<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7558074/7349772/css/fonts.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/animsition.css"/>
+
+<!-- <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7558074/7349772/css/fonts.css" /> -->
 
 
 <style>
@@ -356,19 +358,19 @@ table thead tr {
 
 </head>
 
-<body>
+<body class="animsition">
 
 
   <nav>
     
     <ul>
       <li {if segment_1 == '' OR segment_1 == 'commercial'}class="underline"{/if}><span><a class="selected" {/if}href="{path="commercial/index"}">I.<br>摄影作品</a></span></li>
-      <li {if segment_1 == 'personal'}class="underline"{/if}><span><a href="{path="personal/index"}">II.<br>影像研究</a></span></li>
+      <li {if segment_1 == 'personal'}class="underline"{/if}><span><a href="{path="personal/index"}">II.<br>影像存档</a></span></li>
+      <li {if segment_1 == 'studio'}class="underline" {/if}><span><a href="{path="studio/index"}">III.<br>工作室及暗房</a></span></li>
     </ul>
 
     <ul class="second">
-      <li {if segment_1 == 'studio'}class="underline" {/if}><span><a href="{path="studio/index"}">III.<br>工作室及暗房</a></span></li>  
-      <li {if segment_1 == 'schedule'}class="underline" {/if}><span><a href="{path="schedule/index"}">IV.<br>日程安排</a></span></li>
+      <li {if segment_1 == 'schedule'}class="underline" {/if}><span><a href="{path="schedule/index"}">IV.<br>日程</a></span></li>
       <li {if segment_1 == 'about'}class="underline" {/if}><span><a href="{path="about/index"}">V.<br>关于</a></span></li>
     </ul>
 
@@ -389,6 +391,7 @@ table thead tr {
 <script type="text/javascript" src="{site_url}libraries/js/jquery.touchSwipe.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/jquery.royalslider.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/animsition.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
 
 </body>

@@ -26,6 +26,7 @@
   -moz-touch-callout: none;
   -webkit-touch-callout: none;
   -ms-touch-callout: none;
+  /*font-weight: bold;*/
 }
 
 p {
@@ -99,6 +100,8 @@ img {
    ========================================================================== */
 
 a:link, a:visited {
+  /*font-weight: bold;*/
+
   color: #000;
   text-decoration: none;
   /*border-bottom: 1px dashed #000;*/
@@ -132,12 +135,13 @@ header h1 {
 }
 
 header p {
+  font-weight: bold;
   font-size: 1.2em;
   margin-bottom: 1em;
 }
 
 header p a:link, header p a:visited {
-  color: #AAA;
+  /*color: #AAA;*/
 }
 
 
@@ -146,7 +150,7 @@ header p a:link, header p a:visited {
    ========================================================================== */
 
 nav {
-  margin-top: 5px;
+  margin-top: 8px;
   margin-left: 18px;
   margin-right: 18px;
   margin-bottom: 100px;
@@ -160,6 +164,9 @@ nav ul {
 }
 
 nav ul li {
+  font-weight: bold;
+  line-height: 1.7;
+  font-size: 1.2em;
   margin-right: 2em;
   margin-top: 1em;
   list-style: none;
@@ -170,7 +177,7 @@ nav ul.second li:last-child {
 }
 
 nav ul li a:link, nav ul li a:visited {
-  color: #AAA;
+  /*color: #AAA;*/
 }
 
 nav ul li.underline a:link, nav ul li.underline a:visited {
@@ -189,7 +196,7 @@ li.underline span {
   position: relative;
   top: -10px;
   /*border-bottom: 8px solid rgba(209, 230, 223, 0.9);*/
-  border-bottom: 8px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 8px solid rgba(0, 0, 0, 0.2);
 
 }
 
@@ -358,7 +365,7 @@ table thead tr {
 
 </head>
 
-<body class="animsition">
+<body>
 
 
   <nav>
@@ -379,7 +386,7 @@ table thead tr {
   {layout:contents}
 
   <header>
-      <p><a href="{site_url}">童孝贤的摄影事务所</a></p>
+      <p><a href="{site_url}">童孝贤的摄影工作室</a></p>
   </header>
 
 <script type="text/javascript" src="{site_url}libraries/js/jquery-1.11.3.min.js"></script>

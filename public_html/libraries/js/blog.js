@@ -7,6 +7,12 @@ $(document).ready(function() {
 	$.backstretch(image, {speed: 150});
 });
 
+$(document).ready(function() {
+	$('.ajax-popup-link').magnificPopup({
+	  type: 'ajax'
+	});
+});
+
 document.addEventListener("DOMContentLoaded", function(event) { 
 
 	var initPhotoSwipeFromDOM = function(gallerySelector) {

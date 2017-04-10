@@ -8,11 +8,8 @@
 
 <link rel="stylesheet" type="text/css" href="{site_url}libraries/css/normalize.css"/>
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/swiper.css"/>
-<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/animsition.css"/>
-
+<!-- <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/animsition.css"/> -->
 <!-- <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7558074/7349772/css/fonts.css" /> -->
-
-
 <style>
 
 @charset "utf-8";
@@ -26,7 +23,6 @@
   -moz-touch-callout: none;
   -webkit-touch-callout: none;
   -ms-touch-callout: none;
-  /*font-weight: bold;*/
 }
 
 p {
@@ -371,8 +367,8 @@ table thead tr {
   <nav>
     
     <ul>
-      <li {if segment_1 == '' OR segment_1 == 'commercial'}class="underline"{/if}><span><a class="selected" {/if}href="{path="photography/index"}">I.<br>摄影作品</a></span></li>
-      <li {if segment_1 == 'personal'}class="underline"{/if}><span><a href="{path="archive/index"}">II.<br>影像存档</a></span></li>
+      <li {if segment_1 == '' OR segment_1 == 'photography'}class="underline"{/if}><span><a class="selected" {/if}href="{path="photography/index"}">I.<br>摄影作品</a></span></li>
+      <li {if segment_1 == 'archive'}class="underline"{/if}><span><a href="{path="archive/index"}">II.<br>影像存档</a></span></li>
       <li {if segment_1 == 'studio'}class="underline" {/if}><span><a href="{path="studio/index"}">III.<br>工作室及暗房</a></span></li>
     </ul>
 
@@ -398,7 +394,7 @@ table thead tr {
 <script type="text/javascript" src="{site_url}libraries/js/jquery.touchSwipe.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/jquery.royalslider.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/animsition.js"></script>
+<!-- <script type="text/javascript" src="{site_url}libraries/js/animsition.js"></script> -->
 <script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
 
 </body>

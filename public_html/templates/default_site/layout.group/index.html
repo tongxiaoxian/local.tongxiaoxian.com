@@ -317,24 +317,38 @@ table thead tr {
    ========================================================================== */
 
 #curtain {
+  padding: 15px;
+
+  /*display: none;*/
   position: fixed;
-  padding: 18px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.9);
   color: #FFF;
-  z-index: 10;
+  z-index: 1;
   cursor: pointer;
 }
 
-#curtain h1 {
-  font-weight: bold;
-  position: absolute;
-  bottom: 0;
-  font-size: 5em;
+#curtain div.text {
+  max-width: 50%;
+  position: fixed;
+  bottom: 120px;
 }
+
+#curtain h1 {
+  font-size: 2em;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+
+}
+
+#curtain > p {
+  margin-top: 125px;
+  max-width: 500px;
+}
+
 
 /* ==========================================================================
    Media Queries
@@ -367,7 +381,7 @@ table thead tr {
   <nav>
     
     <ul>
-      <li {if segment_1 == '' OR segment_1 == 'photography'}class="underline"{/if}><span><a class="selected" {/if}href="{path="photography/index"}">I.<br>拍摄作品</a></span></li>
+      <li {if segment_1 == "" OR segment_1 == 'photography'}class="underline"{/if}><span><a class="selected" {/if}href="{path="photography/index"}">I.<br>拍摄作品</a></span></li>
       <li {if segment_1 == 'archive'}class="underline"{/if}><span><a href="{path="archive/index"}">II.<br>存档</a></span></li>
       <li {if segment_1 == 'studio'}class="underline" {/if}><span><a href="{path="studio/index"}">III.<br>暗房及输出</a></span></li>
     </ul>

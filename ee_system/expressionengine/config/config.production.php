@@ -24,9 +24,6 @@ $config['cookie_prefix'] = '';
 $config['cookie_httponly'] = 'y';
 
 
-$config['site_url'] = "http://www.tongxiaoxian.com/";
-$config['tmpl_file_basepath']   = "/var/www/html/tongxiaoxian.com/public_html/templates";
-
 $config['theme_folder_url'] = "http://www.tongxiaoxian.com/assets/themes/";
 $config['theme_folder_path'] = "/var/www/html/tongxiaoxian.com/public_html/assets/themes/";
 

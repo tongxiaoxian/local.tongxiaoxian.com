@@ -1,0 +1,73 @@
+{layout="layout/site"}
+
+<img id="anystretch" src="{site_url}assets/images/uploads/locations.jpg"/> 
+
+<main class="locations">
+
+<!-- <p>漫旅影像凭借海南岛得天独厚的天然地理条件为取景基础，提供省内唯一真正意义上的叙事影像及其他定制类影像服务。</p> -->
+
+<article>
+
+    {exp:channel:entries channel="locations_main" disable="member_data"}
+
+    <br>
+
+        <h1>{title}</h1>
+
+            <ol>
+                {locations_main_relationship}
+                    <li>
+                        <h2><a href="{path='locations/chapter/{locations_main_relationship:url_title}'}">{locations_main_relationship:title}</a></h2>
+                        <p class="delimiter">-</p>
+                        <p>{locations_main_relationship:locations_chapter_abstract}</p>
+                    </li>
+                {/locations_main_relationship}
+            </ol>
+
+    {/exp:channel:entries} 
+
+</article>
+
+
+
+<article>
+
+    <br>
+
+        <h1>文集</h1>
+
+            <ol>
+                    <li>
+                        <h2><a href="{path='locations/chapter/{locations_main_relationship:url_title}'}">蜂鸟</a></h2>
+                        <p class="delimiter">-</p>
+                        <p>{locations_main_relationship:locations_chapter_abstract}</p>
+                    </li>
+                {/locations_main_relationship}
+            </ol>
+
+</article>
+
+<article>
+
+    <br>
+
+        <h1>翻译</h1>
+
+            <ol>
+                    <li>
+                        <h2><a href="{path='locations/chapter/{locations_main_relationship:url_title}'}">蜂鸟</a></h2>
+                        <p class="delimiter">-</p>
+                        <p>"一生中我们的心承载心事太多。每一日、每一时、每一刻，我们的心承载心事太多。"</p>
+                    </li>
+                    <li>
+                        <h2><a href="{path='locations/chapter/{locations_main_relationship:url_title}'}">壁虎</a></h2>
+                        <p class="delimiter">-</p>
+                        <p>"一生中我们的心承载心事太多。每一日、每一时、每一刻，我们的心承载心事太多。"</p>
+                    </li>
+            </ol>
+
+</article>
+
+
+</main> 
+

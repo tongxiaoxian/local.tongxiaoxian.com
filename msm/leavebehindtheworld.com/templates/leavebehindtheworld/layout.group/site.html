@@ -39,11 +39,10 @@ ul {
 }
 
 html {
-  height: 100%
+  height: 100%;
 }
 
 body {
-  /*background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));*/
   font-family: "Myriad Pro", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-weight: 200;
   font-size: 62.5%;
@@ -52,6 +51,7 @@ body {
   padding: 3em 3em 2.5em 3em;
   letter-spacing: .5px;
   -webkit-font-smoothing: antialiased;
+  min-height: 100%;
 }
 
 /* ==========================================================================
@@ -209,14 +209,6 @@ main  p {
   /*font-weight: bold;*/
 }
 
-div.backstretch {
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;  
-}
 
 /* ==========================================================================
   Gallery
@@ -400,7 +392,7 @@ var _hmt = _hmt || [];
 
 <body>
 
-<div class="backstretch"></div>
+<!-- <div class="backstretch"></div> -->
 
 <nav>
 	<ul>
@@ -414,6 +406,7 @@ var _hmt = _hmt || [];
 {layout:contents}
 
 <p class="footer">&#169;2017 飞到世界的另外一边</p>
+
 
 <!-- Root element of PhotoSwipe. Must have class pswp. -->
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">

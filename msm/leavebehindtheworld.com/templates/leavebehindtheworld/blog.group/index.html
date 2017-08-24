@@ -1,0 +1,27 @@
+{layout="layout/index"}
+
+<img id="anystretch" src="{site_url}assets/images/uploads/blog.jpg"/> 
+
+<main class="locations">
+
+{exp:channel:entries channel="blog" limit="1" disable="member_data"}
+
+{layout:set name="title"}{site_name}  -  博客  -  {title}{/layout:set}
+
+        <img id="anystretch" src="{locations_chapter_background}"/>
+
+        <article>
+                 
+                <h1>{title}</h1>
+                
+                {blog_body}
+
+                <time datetime="{entry_date format="%Y"}-{entry_date format="%m"}-{entry_date format="%d"}">{entry_date format="%F %d, %Y"}</time>
+
+
+        </article>
+    
+{/exp:channel:entries} 
+
+</main>
+

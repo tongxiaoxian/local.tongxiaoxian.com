@@ -92,22 +92,22 @@ $assign_to_config['site_url'] = "http://www.leavebehindtheworld.com/";
 $assign_to_config['tmpl_file_basepath'] = '/var/www/html/tongxiaoxian.com/msm/leavebehindtheworld.com/templates';
 
 $assign_to_config['upload_preferences'] = array(           
-    40 => array(                                                            // ID of upload destination
+    1 => array(                                                            // ID of upload destination
         'name'        => 'photography',                          // Display name in control panel
         'server_path' => '/var/www/html/tongxiaoxian.com/msm/leavebehindtheworld.com/assets/images/uploads/photography/', // Server path to upload directory
         'url'         => 'http://www.leavebehindtheworld.com/assets/images/uploads/photography/'      // URL of upload directory
     ),
-    41 => array(                                                            // ID of upload destination
+    2 => array(                                                            // ID of upload destination
         'name'        => 'text',                          // Display name in control panel
         'server_path' => '/var/www/html/tongxiaoxian.com/msm/leavebehindtheworld.com/assets/images/uploads/text/', // Server path to upload directory
         'url'         => 'http://www.leavebehindtheworld.com/assets/images/uploads/text/'      // URL of upload directory
     ),
-    42 => array(                                                            // ID of upload destination
+    3 => array(                                                            // ID of upload destination
         'name'        => 'treatment',                          // Display name in control panel
         'server_path' => '/var/www/html/tongxiaoxian.com/msm/leavebehindtheworld.com/assets/images/uploads/treatment/', // Server path to upload directory
         'url'         => 'http://www.leavebehindtheworld.com/assets/images/uploads/treatment/'      // URL of upload directory
     ),
-    48 => array(                                                            // ID of upload destination
+    4 => array(                                                            // ID of upload destination
         'name'        => 'about',                          // Display name in control panel
         'server_path' => '/var/www/html/tongxiaoxian.com/msm/leavebehindtheworld.com/assets/images/uploads/about/', // Server path to upload directory
         'url'         => 'http://www.leavebehindtheworld.com/assets/images/uploads/about/'      // URL of upload directory

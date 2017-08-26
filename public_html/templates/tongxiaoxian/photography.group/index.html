@@ -1,13 +1,41 @@
 {layout="layout/index" title="童孝贤"}
 
-<main class="commercial">
+<main class="photography">
+
+  {exp:channel:entries channel="photography" disable="member_data"}
+
+      <article>      
+        
+        <div>
+          <time>{entry_date format="%Y"}</time>
+          <p>{photography_tag}</p>
+          <h1>{title}</h1>
+          <p>{categories}{category_name}{/categories}</p>
+        </div>
+
+        <div>
+          
+          <a href="{title_permalink='photography/content'}">
+          
+          {photography_cover}
+            <img src="{url}">
+          {/photography_cover}
+          
+          </a>
+
+        </div>
+
+      </article>
+
+  {/exp:channel:entries}
+
 
    <article>
 
     <div>
       <time>2016</time>
       <p>彩色负片 / 120 / 数字扫描件</p>
-      <h1>海边的人</h1>
+      <h1>另一种可能性</h1>
       <p>个人作品</p>
     </div>
     
@@ -78,25 +106,10 @@
     
     <div>
       <img src="{site_url}assets/images/uploads/photography/pin_tie_01.jpg" alt="">
-      <img src="{site_url}assets/images/uploads/photography/pin_tie_02.jpg" alt="">
     </div>  
 
   </article>
 
-<!--   <article>
-
-    <div>
-      <time>2015</time>
-      <p>数码文件 / 35mm</p>
-      <h1>张先生</h1>
-      <p>客户委托</p>
-    </div>
-    
-    <div>
-      <img src="{site_url}assets/images/uploads/photography/_DSC1401.jpg" alt="">
-    </div>  
-
-  </article> -->
   <article>
 
     <div>

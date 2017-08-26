@@ -98,8 +98,13 @@ $assign_to_config['site_url'] = "http://www.tongxiaoxian.com/";
 $assign_to_config['tmpl_file_basepath']   = "/var/www/html/tongxiaoxian.com/public_html/templates";
 
 $assign_to_config['upload_preferences'] = array(
-
+    5 => array(                                                            // ID of upload destination
+        'name'        => 'photography',                          // Display name in control panel
+        'server_path' => '/var/www/html/tongxiaoxian.com/public_html/assets/images/uploads/photography/', // Server path to upload directory
+        'url'         => 'http://www.tongxiaoxian.com/assets/images/uploads/photography/'      // URL of upload directory
+    )
 );
+
 
 
 /*

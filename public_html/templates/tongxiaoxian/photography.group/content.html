@@ -1,0 +1,37 @@
+{layout="layout/index" title="童孝贤"}
+
+<main class="photography">
+	
+
+	<!-- <p><a href="{path="photography/index"}#portrait">return to top</a></p> -->
+
+	<!-- <p><a href="{path="photography/index"}"><-</a></p> -->
+
+	
+	{exp:channel:entries channel="photography" disable="member_data"}
+
+		<article>
+
+			<div class="gallery">
+
+				{photography_gallery}
+                
+					<!-- <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"> -->
+
+					{photography_gallery:photography_gallery_file}
+
+						<img src="{url}">
+
+					{/photography_gallery:photography_gallery_file}
+                
+					<!-- </figure> -->
+
+				{/photography_gallery}
+
+        	</div>
+
+		</article>
+
+	{/exp:channel:entries}
+
+</main>

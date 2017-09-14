@@ -253,14 +253,20 @@ main.content figure a:visited, main.content figure a:link{
 }
 
 main.content figure {
+  /*flex-wrap: wrap;*/
   /*width: 100px;*/
   margin: 0;
 }
 
+main.content figure:first-child {
+  flex: 0 1 100%;
+}
+
+
 
 main.content article div.gallery {
   display: flex;
-  /*flex-direction: row;*/
+  /*flex-flow: row wrap;*/
 /*justify-content:space-around;*/
   /*flex-wrap: wrap;*/
   /*margin-bottom: 8em;*/

@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	var image = $('#anystretch').attr("src");
-	$("html").backstretch(image, {speed: 150});
+	$("body").backstretch(image, {speed: 150});
 });
 
 $(document).ready(function() {

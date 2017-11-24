@@ -1,48 +1,56 @@
-{layout="layout/index" title="童孝贤 - 作品 - 摄影师 - 广州 &amp; 深圳 &amp; 三亚 &amp; 海口"}
+{layout="layout/index"}
 
-<main class="photography">
+<main>
 
-  {exp:channel:entries channel="photography" disable="member_data"}
+{exp:channel:entries channel="photography" limit="1" disable="categories|member_data"}
+
+{layout:set name="title"}{site_name}  -  影像{/layout:set}
+
+      <img id="anystretch" src="{photography_background}"/> 
 
       <article>      
         
-        <div>
-          <time>{entry_date format="%Y"}</time>
-          <p>{photography_tag}</p>
-          <h1>{title}</h1>
-          <p>{categories}{category_name}{/categories}</p>
-        </div>
+        <h1>{title}</h1>
 
-        <div>
-          
-          <a href="{title_permalink='photography/content'}">
-          
-          {photography_cover}
-            <img src="{url}">
-          {/photography_cover}
-          
-          </a>
+        <div class="gallery">
+
+              {photography_gallery}
+                
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  
+                  {photography_gallery:photography_gallery_file}
+
+                      <a href="{url}" itemprop="contentUrl" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+
+                  {/photography_gallery:photography_gallery_file}
+
+                  {photography_gallery:photography_gallery_thumb}
+
+                    <img src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+
+                  {/photography_gallery:photography_gallery_thumb}
+                  
+                </a>
+                
+                </figure>
+
+              {/photography_gallery}
 
         </div>
 
       </article>
 
-  {/exp:channel:entries}
+    {paginate}
+        <p>
+            {if previous_page}
+                <a class="prev" href="{auto_path}">上一页</a> &nbsp;
+            {/if}
+            {if next_page}
+                <a class="next" href="{auto_path}">下一页</a>
+            {/if}
+        </p>
+    {/paginate}
 
-  <article>
-
-    <div>
-      <time>2012</time>
-      <p>黑白负片 / 8x10 / 数字扫描件</p>
-      <h1>不可信的真实</h1>
-      <p>客户委托</p>
-    </div>
-    
-    <div>
-      <img src="{site_url}assets/images/uploads/photography/bu_ke_xin_de_zhen_shi_01_cropped_01.jpg" alt="">
-      <img src="{site_url}assets/images/uploads/photography/bu_ke_xin_de_zhen_shi_02_cropped_01.jpg" alt="">
-    </div>  
-
-  </article>
+{/exp:channel:entries}
 
 </main>

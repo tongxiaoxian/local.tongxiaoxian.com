@@ -29,11 +29,11 @@ $(document).ready(function() {
    
 $(document).ready(function() {
 	var window_height = $(window).height();
-	var works_main = $('main.works_main');
+	var works = $('main.works');
 	var works_chapter = $('main.works_chapter');
 	var works_detail = $('main.works_detail');
 	
-	works_main.css({
+	works.css({
 		'padding-top': window_height/2 - 120 + 'px'
 	});
 
@@ -54,8 +54,8 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	var window_width = $(window).width();
-	var section_first = $('main.works_main section:first');
-	var section = $('main.works_main section');
+	var section_first = $('main.works section:first');
+	var section = $('main.works section');
 	var section_margin_left = window_width/2 - section_first.width()/2;
 	
 	section.css({

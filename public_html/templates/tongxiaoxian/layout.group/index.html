@@ -85,7 +85,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
+  /*font-weight: normal;*/
   font-size: 1.2em;
   /*margin-bottom: 2em;*/
 }
@@ -238,6 +238,9 @@ main p {
   max-width: 600px;
 }
 
+main p.small {
+  font-size: 1.1em;
+}
 
 /* ==========================================================================
    Main Photography
@@ -404,7 +407,7 @@ table thead tr {
 
     <ul class="second">
       <li {if segment_1 == 'schedule'}class="underline" {/if}><span><a href="{path="schedule/index"}">IV.<br>日程</a></span></li>
-      <li {if segment_1 == 'about'}class="underline" {/if}><span><a href="{path="about/index"}">V.<br>工作</a></span></li>
+      <li {if segment_1 == 'about'}class="underline" {/if}><span><a href="{path="about/index"}">V.<br>關於</a></span></li>
     </ul>
 
   </nav>

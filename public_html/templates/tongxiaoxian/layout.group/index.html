@@ -106,6 +106,15 @@ p {
   margin-bottom: 2em;
 }
 
+p.s {
+  font-size: 1.1em;
+}
+
+p.n {
+  margin-top: -1em;
+  font-weight: normal;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -184,7 +193,7 @@ nav ul {
 }
 
 nav ul li {
-  font-weight: bold;
+  /*font-weight: bold;*/
   line-height: 1.7;
   font-size: 1.2em;
   margin-right: 2em;
@@ -197,12 +206,15 @@ nav ul.second li:last-child {
 }
 
 nav ul li a:link, nav ul li a:visited {
-  /*color: #AAA;*/
+  color: #666;
 }
 
+/*nav ul li a.underline:link, nav ul li a.underline:visited {*/
+
+/*}*/
 nav ul li.underline a:link, nav ul li.underline a:visited {
   color: #000;
-  /*font-weight: bold;*/
+  font-weight: bold;
   /*font-style: italic;*/
 }
 
@@ -216,7 +228,7 @@ li.underline span {
   position: relative;
   top: -10px;
   /*border-bottom: 8px solid rgba(209, 230, 223, 0.9);*/
-  border-bottom: 8px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 8px solid rgba(200, 155, 100, 0.4);
 
 }
 
@@ -238,9 +250,7 @@ main p {
   max-width: 600px;
 }
 
-main p.small {
-  font-size: 1.1em;
-}
+
 
 /* ==========================================================================
    Main Photography
@@ -375,6 +385,14 @@ table thead tr {
 
 
 /* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer p {
+  /*color: #666;*/
+}
+
+/* ==========================================================================
    Media Queries
    ========================================================================== */
 
@@ -400,14 +418,14 @@ table thead tr {
   <nav>
     
     <ul>
-      <li {if segment_1 == 'photography'}class="underline"{/if}><span><a class="selected" {/if}href="{path="photography/index"}">I.<br>攝影作品</a></span></li>
-      <li {if segment_1 == 'archives'}class="underline"{/if}><span><a href="{path="archives/index"}">II.<br>存檔</a></span></li>
-      <li {if segment_1 == 'studio'}class="underline" {/if}><span><a href="{path="studio/index"}">III.<br>工作室及暗房</a></span></li>
+      <li {if segment_1 == '' OR segment_1 == 'photography'}class="underline"{/if}><span><a href="{path="photography/index"}">壹.<br>攝影作品</a></span></li>
+      <li {if segment_1 == 'archives'}class="underline"{/if}><span><a href="{path="archives/index"}">貳.<br>存檔</a></span></li>
+      <li {if segment_1 == 'studio'}class="underline" {/if}><span><a href="{path="studio/index"}">叄.<br>工作室及暗房</a></span></li>
     </ul>
 
     <ul class="second">
-      <li {if segment_1 == 'schedule'}class="underline" {/if}><span><a href="{path="schedule/index"}">IV.<br>日程</a></span></li>
-      <li {if segment_1 == 'about'}class="underline" {/if}><span><a href="{path="about/index"}">V.<br>關於</a></span></li>
+      <li {if segment_1 == 'schedule'}class="underline" {/if}><span><a href="{path="schedule/index"}">肆.<br>日程</a></span></li>
+      <li {if segment_1 == 'about'}class="underline" {/if}><span><a href="{path="about/index"}">伍.<br>關於</a></span></li>
     </ul>
 
   </nav>
@@ -417,6 +435,7 @@ table thead tr {
   <header>
 
       <p><a href="{site_url}">童孝賢的攝影本</a></p>
+      <p class="s n">Last Update: 2018.1.6</p>
 
   </header>
 

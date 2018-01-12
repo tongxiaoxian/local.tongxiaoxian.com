@@ -68,7 +68,6 @@ ol {
 body {
   font-family: "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 62.5%;
-  /*background-color: #eeedeb;*/
   position: relative;
   display: flex;
   flex-direction: column;
@@ -129,11 +128,8 @@ img {
    ========================================================================== */
 
 a:link, a:visited {
-  /*font-weight: bold;*/
-
   color: #000;
   text-decoration: none;
-  /*border-bottom: 1px dashed #000;*/
 }
 
 a:hover {
@@ -154,8 +150,8 @@ main a:link, main a:visited {
    ========================================================================== */
 
 header {
-  margin-left: 17px;
-  margin-right: 17px;  
+  margin-left: 15px;
+  margin-right: 15px;  
   margin-top: 5em;
 }
 
@@ -180,8 +176,8 @@ header p a:link, header p a:visited {
 
 nav {
   margin-top: 8px;
-  margin-left: 17px;
-  margin-right: 17px;
+  margin-left: 15px;
+  margin-right: 15px;
   margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
@@ -189,11 +185,9 @@ nav {
 
 nav ul {  
   display: flex;
-  /*margin-right: 1em;*/
 }
 
 nav ul li {
-  /*font-weight: bold;*/
   line-height: 1.7;
   font-size: 1.2em;
   margin-right: 2em;
@@ -207,15 +201,12 @@ nav ul.second li:last-child {
 
 nav ul li a:link, nav ul li a:visited {
   color: #333;
+  font-weight: bold;
 }
 
-/*nav ul li a.underline:link, nav ul li a.underline:visited {*/
-
-/*}*/
 nav ul li.underline a:link, nav ul li.underline a:visited {
   color: #000;
   font-weight: bold;
-  /*font-style: italic;*/
 }
 
 nav ul li a:hover, nav ul li a:active {
@@ -227,7 +218,6 @@ nav ul li a:hover, nav ul li a:active {
 li.underline span {
   position: relative;
   top: -10px;
-  /*border-bottom: 8px solid rgba(209, 230, 223, 0.9);*/
   border-bottom: 8px solid rgba(200, 155, 100, 0.4);
 
 }
@@ -242,8 +232,8 @@ li.underline a {
    ========================================================================== */
 
 main {
-  margin-left: 17px;
-  margin-right: 17px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 main p {
@@ -282,8 +272,6 @@ main.photography img {
 
 main.content img {
   margin-bottom: 2em;
-  
-  /*display: inline-block;*/
 }
 
 main.content figure a:visited, main.content figure a:link{
@@ -291,8 +279,6 @@ main.content figure a:visited, main.content figure a:link{
 }
 
 main.content figure {
-  /*flex-wrap: wrap;*/
-  /*width: 100px;*/
   margin: 0;
 }
 
@@ -303,12 +289,8 @@ main.content figure:first-child {
 
 
 main.content article div.gallery {
-  /*display: flex;*/
-  /*flex-flow: row wrap;*/
-/*justify-content:space-around;*/
-  /*flex-wrap: wrap;*/
-  /*margin-bottom: 8em;*/
-  
+
+
 }
 
 
@@ -420,12 +402,12 @@ footer p {
     <ul>
       <li {if segment_1 == '' OR segment_1 == 'photography'}class="underline"{/if}><span><a href="{path="photography/index"}">壹.<br>攝影作品</a></span></li>
       <li {if segment_1 == 'archives'}class="underline"{/if}><span><a href="{path="archives/index"}">貳.<br>存檔</a></span></li>
-      <li {if segment_1 == 'studio'}class="underline" {/if}><span><a href="{path="studio/index"}">叄.<br>工作室及暗房</a></span></li>
+      <li {if segment_1 == 'studio'}class="underline" {/if}><span><a href="{path="studio/index"}">叄.<br>暗房</a></span></li>
     </ul>
 
     <ul class="second">
       <li {if segment_1 == 'schedule'}class="underline" {/if}><span><a href="{path="schedule/index"}">肆.<br>日程</a></span></li>
-      <li {if segment_1 == 'about'}class="underline" {/if}><span><a href="{path="about/index"}">伍.<br>關於</a></span></li>
+      <li {if segment_1 == 'about'}class="underline" {/if}><span><a href="{path="about/index"}">伍.<br>聯繫</a></span></li>
     </ul>
 
   </nav>

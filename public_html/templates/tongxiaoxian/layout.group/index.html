@@ -264,6 +264,25 @@ main.photography img {
   margin-bottom: 2em;
 }
 
+/* ==========================================================================
+   Main Archives
+   ========================================================================== */
+
+main.archives.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 8em;  
+}
+
+main.archives.content div.gallery {
+  margin-bottom: 10em;
+}
+
+main.archives.content article {
+  width: 500px;
+}
 
 
 /* ==========================================================================
@@ -400,8 +419,8 @@ footer p {
   <nav>
     
     <ul>
-      <li {if segment_1 == '' OR segment_1 == 'photography'}class="underline"{/if}><span><a href="{path="photography/index"}">壹.<br>攝影作品</a></span></li>
-      <li {if segment_1 == 'archives'}class="underline"{/if}><span><a href="{path="archives/index"}">貳.<br>存檔</a></span></li>
+      <li {if segment_1 == '' OR segment_1 == 'photography'}class="underline"{/if}><span><a href="{path="photography/index"}">壹.<br>攝影集</a></span></li>
+      <li {if segment_1 == 'archives'}class="underline"{/if}><span><a href="{path="archives/index"}">貳.<br>作品存檔</a></span></li>
       <li {if segment_1 == 'studio'}class="underline" {/if}><span><a href="{path="studio/index"}">叄.<br>暗房</a></span></li>
     </ul>
 

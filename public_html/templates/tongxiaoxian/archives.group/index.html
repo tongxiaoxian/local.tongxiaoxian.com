@@ -1,6 +1,6 @@
-{layout="layout/index" title="童孝賢的攝影本 - 存檔"}
+{layout="layout/index" title="童孝賢的攝影本 - 作品存檔 - 攝影師 - 廣州 &amp; 深圳 &amp; 三亞 &amp; 海口"}
 
-<main class="archive">
+<main class="archives">
 
 <div class="container">
 
@@ -19,36 +19,14 @@
         </thead>
 
         <tbody>  
-            
-            <tr>
-                <td>2016</td>
-                <td><a href="#">工作室周邊環境</a></td>
-                <td class="type">風景</td>
-            </tr>
-            
-            <tr>
-                <td>2015</td>
-                <td><a href="#">陶媛</a></td>
-                <td class="type">人像創作</td>
-            </tr>           
 
-            <tr>
-                <td>2014</td>
-                <td><a href="#">玥生的世界</a></td>
-                <td class="type">黑白</td>
-            </tr>
-
-            <tr>
-                <td>2012</td>
-                <td><a href="#">不可信的真實</a></td>
-                <td class="type">平面廣告</td>
-            </tr>       
-
-            <tr>
-                <td>2012</td>
-                <td><a href="#">拼貼</a></td>
-                <td class="type">平面廣告</td>
-            </tr>    
+            {exp:channel:entries channel="archives" disable="member_data"}
+                <tr>      
+                    <td>{entry_date format="%Y"}</td>
+                    <td><a href="{title_permalink='archives/content'}">{title}</a></td>
+                    <td class="type">風景</td>
+                </tr>
+            {/exp:channel:entries}
 
         </tbody>
 
@@ -73,13 +51,13 @@
             <tr>
                 <td>2009-2011</td>
                 <td class="underline"><span><a href="#">《悅活》雜誌</a></span></td>
-                <td class="type">期刊</td>
+                <td class="type">雜誌</td>
             </tr>
 
             <tr>
                 <td>2008-2009</td>
                 <td class="underline"><span><a href="#">《三聯生活週刊》</a></span></td>
-                <td class="type">期刊</td>
+                <td class="type">雜誌</td>
             </tr>
 
         </tbody>

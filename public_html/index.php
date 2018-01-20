@@ -102,7 +102,12 @@ $assign_to_config['upload_preferences'] = array(
         'name'        => 'photography',
         'server_path' => '/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/public_html/assets/images/uploads/photography/',
         'url'         => 'http://local.tongxiaoxian.com/assets/images/uploads/photography/'
-    )
+    ),
+    6 => array(
+        'name'        => 'archives',
+        'server_path' => '/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/public_html/assets/images/uploads/archives/',
+        'url'         => 'http://local.tongxiaoxian.com/assets/images/uploads/archives/'
+    )    
 );
 
 

@@ -1,0 +1,41 @@
+{layout="layout/index" title="童孝賢的攝影本（摄影本） - 作品存檔 - 攝影師 - 廣州（广州） &amp; 深圳 &amp; 三亞（三亚） &amp; 海口"}
+
+<img id="anystretch" src="{site_url}assets/images/uploads/hainan.jpg"/> 
+
+	{exp:channel:entries channel="archives" disable="member_data"}
+	
+	{layout:set name="title"}童孝賢的攝影本 - 作品存檔 - {title} - 攝影師 - 廣州 &amp; 深圳 &amp; 三亞 &amp; 海口{/layout:set}
+
+		<main class="archives content">
+
+			<div class="gallery">
+
+				{archives_gallery}
+			        
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			          
+			          {archives_gallery:file}
+
+			              <a href="{url}" itemprop="contentUrl" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+
+			          {/archives_gallery:file}
+
+			          {archives_gallery:thumb}
+
+			            <img src="{url}" width="150" height="150">
+
+			            <!-- <img src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}"> -->
+
+			          {/archives_gallery:thumb}
+			          
+						</a>
+			        
+			        </figure>
+
+				{/archives_gallery}
+
+			</div>
+
+		</main>
+
+{/exp:channel:entries}

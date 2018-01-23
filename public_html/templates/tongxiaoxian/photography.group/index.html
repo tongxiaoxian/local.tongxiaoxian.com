@@ -1,33 +1,56 @@
-{layout="layout/index" title="童孝賢的攝影本 - 攝影集 - 攝影師 - 廣州 &amp; 深圳 &amp; 三亞 &amp; 海口"}
+{layout="layout/index"}
 
-<main class="photography">
+<main>
 
-  {exp:channel:entries channel="photography" disable="member_data"}
+{exp:channel:entries channel="photography" limit="1" disable="categories|member_data"}
 
-      <article>      
+{layout:set name="title"}{site_name} - 影像 - {title}{/layout:set}
+
+      <img id="anystretch" src="{photography_background}"/> 
+
+      <article>
         
-        <div>
-          <time><i>{entry_date format="%M %Y"}</i></time>
-          <p>{photography_tag}</p>
-          <h1>{title}</h1>
-          <p class="s">{photography_type}</p>
-        </div>
+        <!-- <h1>{title}</h1> -->
 
-        <div>
-          
-          <a href="{title_permalink='photography/content'}">
-          
-          {photography_cover}
-            <img src="{url}">
-          {/photography_cover}
-          
-          </a>
+        <div class="gallery">
+
+              {photography_gallery}
+                
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  
+                  {photography_gallery:photography_file}
+
+                      <a href="{url}" itemprop="contentUrl" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+
+                  {/photography_gallery:photography_file}
+
+                  {photography_gallery:photography_thumb}
+
+                    <img src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+
+                  {/photography_gallery:photography_thumb}
+                  
+                </a>
+                
+                </figure>
+
+              {/photography_gallery}
 
         </div>
 
       </article>
 
-  {/exp:channel:entries}
+    {paginate}
+        <p>
+            {if previous_page}
+                <a class="prev" href="{auto_path}">上一頁</a> &nbsp;
+            {/if}
+            {if next_page}
+                <a class="next" href="{auto_path}">下一頁</a>
+            {/if}
+        </p>
+    {/paginate}
 
+{/exp:channel:entries}
 
 </main>

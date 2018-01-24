@@ -22,7 +22,7 @@
 
         <tbody>  
 
-            {exp:channel:entries channel="archives" disable="member_data" entry_id="not 21"}
+            {exp:channel:entries channel="archives" disable="member_data" entry_id="not 21|22"}
                 <tr>      
                     <td>{entry_date format="%Y"}</td>
                     <td><a href="{title_permalink='archives/content'}">{title}</a></td>
@@ -50,19 +50,13 @@
 
         <tbody>  
 
-            {exp:channel:entries channel="archives" disable="member_data" entry_id="21"}
+            {exp:channel:entries channel="archives" disable="member_data" entry_id="21|22"}
                 <tr>      
                     <td>2009-2011</td>
                     <td><a href="{title_permalink='archives/content'}">{title}</a></td>
                     <td class="type">雜誌</td>
                 </tr>
             {/exp:channel:entries}
-
-            <tr>
-                <td>2008-2009</td>
-                <td class="underline"><span><a href="#">《三聯生活週刊》</a></span></td>
-                <td class="type">雜誌</td>
-            </tr>
 
         </tbody>
 

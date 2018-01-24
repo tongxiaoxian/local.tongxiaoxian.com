@@ -66,7 +66,7 @@ body {
   font-size: 62.5%;
   min-height: 100%;
   color: white;
-  padding: 1em 2em 2.5em 2em;
+  padding: 30px 25px 25px 25px;
   letter-spacing: .5px;
   -webkit-font-smoothing: antialiased;
 }
@@ -90,10 +90,10 @@ body {
 
 h1  {
   font-family: "Myriad Pro", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  /*font-weight: normal;*/
-  font-size: 2em;
+  font-weight: normal;
+  font-size: 1.1em;
   letter-spacing: 1px;
-  margin-bottom: 1em;
+  /*margin-bottom: 1em;*/
 }
 
 h2 {
@@ -112,13 +112,18 @@ p, figcaption {
   margin-bottom: 2em;
 }
 
-p.slogan {
-  font-size:2em;
+p.s {
+  font-size: 1.1em;
+}
+
+p.n {
+  margin-top: -1em;
+  font-weight: normal;
 }
 
 time {
   display: block;
-  font-size: 1.3em;
+  font-size: 1.1em;
   line-height: 2;
   margin-top: 1.5em;
   display: block;
@@ -151,6 +156,11 @@ li h2, li p {
   font-weight: normal;
 }
 
+img {
+  padding-left: 2px;
+  padding-bottom: 2px;
+}
+
 /* ==========================================================================
    General Links
    ========================================================================== */
@@ -158,7 +168,9 @@ li h2, li p {
 a:link, a:visited {
   color: white;
   text-decoration: none;
-  border-bottom: 1px dotted white;
+  padding-bottom: 2px;
+  /*border-bottom: 1px solid #d1d1d1;*/
+  border-bottom: dotted 1px rgba(209, 209, 209, .6);
 }
 
 a:hover {
@@ -178,13 +190,13 @@ a:active {
 
 nav {
   display: -webkit-flex;
-  margin-bottom:5em;
+  margin-bottom: 5em;
 }
 
 nav ul li {
   font-family: "Myriad Pro", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 1.3em;
-  margin-top:0.8em;
+  margin-top: 0.8em;
   list-style: none;
 }
 
@@ -221,7 +233,7 @@ main {
   margin-bottom:3em;
 }
 
-main  p {
+main p {
   max-width: 500px;
   /*font-weight: bold;*/
 }
@@ -349,21 +361,11 @@ main.destinations p.delimiter, main.accomodations p.delimter {
 }
 
 /* ==========================================================================
-  destinations
+  Archives
    ========================================================================== */
 
-main.about a:link, main.about a:visited {
-  color: white;
-  text-decoration: none;
-  border-bottom: 1px dotted white;
-}
-
-main.about a:hover {
-  border-bottom: none;
-}
-
-main.about a:active {
-  font-weight: bold;
+main.archives.content p {
+  font-size: 1.1em;
 }
 
 

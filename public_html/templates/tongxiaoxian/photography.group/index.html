@@ -2,54 +2,28 @@
 
 <main>
 
-{exp:channel:entries channel="photography" limit="1" disable="categories|member_data"}
+{exp:channel:entries channel="photography" disable="categories|member_data"}
 
 {layout:set name="title"}童孝賢的攝影本（摄影本） - 攝影作品 - 攝影師 - 廣州（广州） &amp; 深圳 &amp; 三亞（三亚） &amp; 海口 - {title}{/layout:set}
 
       <img id="anystretch" src="{site_url}assets/images/uploads/nan_gang_ma_tou.jpg"/>
 
       <article>
-        
-        <!-- <h1>{title}</h1> -->
-
-        <div class="gallery">
-
-              {photography_gallery}
-                
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                  
-                  {photography_gallery:photography_file}
-
-                      <a href="{url}" itemprop="contentUrl" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
-
-                  {/photography_gallery:photography_file}
-
-                  {photography_gallery:photography_thumb}
-
-                    <img src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
-
-                  {/photography_gallery:photography_thumb}
-                  
-                </a>
-                
-                </figure>
-
-              {/photography_gallery}
-
-        </div>
-
+        {photography_cover}
+        <img src="{url}" alt="">
+        {/photography_cover}
       </article>
 
-    {paginate}
-        <p>
-            {if previous_page}
-                <a class="prev" href="{auto_path}">上一頁</a> &nbsp;
-            {/if}
-            {if next_page}
-                <a class="next" href="{auto_path}">下一頁</a>
-            {/if}
-        </p>
-    {/paginate}
+      {paginate}
+          <p>
+              {if previous_page}
+                  <a class="prev" href="{auto_path}">上一頁</a> &nbsp;
+              {/if}
+              {if next_page}
+                  <a class="next" href="{auto_path}">下一頁</a>
+              {/if}
+          </p>
+      {/paginate}
 
 {/exp:channel:entries}
 

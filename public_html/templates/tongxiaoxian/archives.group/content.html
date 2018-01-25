@@ -1,6 +1,6 @@
 {layout="layout/index" title="童孝賢的攝影本（摄影本） - 作品存檔 - 攝影師 - 廣州（广州） &amp; 深圳 &amp; 三亞（三亚） &amp; 海口"}
 
-<img id="anystretch" src="{site_url}assets/images/uploads/hainan.jpg"/> 
+<img id="anystretch" src="{site_url}assets/images/uploads/nan_du_jiang.jpg"/>
 
 	{exp:channel:entries channel="archives" disable="member_data" limit="1" dynamic=“off”}
 	
@@ -20,7 +20,7 @@
           			<time><i>{entry_date format="%M %Y"}</i></time>
           			<p>{archives_tag}</p>
           			<h1>{title}</h1>
-          			<p>{categories}{category_name} {/categories}</p>
+          			<p>{categories backspace="3"}{category_name} / {/categories}</p>
 		        </div>
 
 		        <br>
@@ -39,7 +39,7 @@
 
 				          {archives_gallery:thumb}
 
-				            <img src="{url}" width="105" height="105">
+				            <img src="{url}" width="105">
 
 				            <!-- <img src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}"> -->
 
@@ -52,10 +52,7 @@
 					{/archives_gallery}
 
 				</div>
-
-
-		
-
+				
 			</article>
 
 

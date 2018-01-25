@@ -91,7 +91,7 @@ body {
 h1  {
   font-family: "Myriad Pro", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-weight: normal;
-  font-size: 1.3em;
+  font-size: 1.2em;
   letter-spacing: 1px;
   /*margin-bottom: 1em;*/
 }
@@ -127,7 +127,6 @@ time {
   line-height: 2;
   margin-top: 1.5em;
   display: block;
-  margin-top: 2em;
 }
 
 p a, p span {
@@ -239,187 +238,91 @@ main p {
 }
 
 
-/* ==========================================================================
-  Gallery
-   ========================================================================== */
-
-main div.gallery {
-  /*display: -webkit-flex;*/
-  /*display: flex;*/
-  /*-webkit-flex-flow: wrap; */
-
-  display: inline-block;
-  margin-bottom: 2em;
-  max-width: 500px;
-  
-}
-
-main div.gallery article{
-
-}
-
-main div.gallery figure {
-  display: inline;
-}
-main div.gallery figure a:hover {
-  /*opacity: 0.9;*/
-  border-bottom: none;
-}
-
-/* ==========================================================================
-   Price
-   ========================================================================== */
-
-div.price {
-  background: white;
-  color: black;
-  max-width:900px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 3em 3em 3em 3em;
-}
-
-div.price > div {
-  display: -webkit-flex;
-  -webkit-justify-content: space-between;
-  -webkit-flex-flow: wrap; 
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
-}
-
-div.price div div{
-  /*min-width: 300px;*/
-}
-
-
-
-div.price a:link, div.price a:visited {
-  color: black;
-  text-decoration: none;
-  border-bottom: 1px dotted black;
-}
-
-div.price a:hover {
-}
-
-div.price a:active {
-  font-weight: bold;
-  border-bottom: 1px dotted black;
-}
-
-
-div.wechat {
-  text-align: center;
-  background: white;
-  color: black;
-  max-width:300px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top:3em;
-  padding-bottom: 1em;
-  /*padding: 3em 3em 3em 3em;*/
-}
-
-div.price ol > li {
-  font-size: 1.3em;
-}
-
-/* ==========================================================================
-  destinations
-   ========================================================================== */
-
-main.destinations ol, main.accomodations ol {
-  /*margin-bottom: 5em;*/
-}
-
-main.destinations ol > li, main.accomodations ol > li {
-  margin-top: 0.5em;
-  font-size: 1.3em;
-}
-
-main.destinations ol p, main.accomodations ol p {
-  margin-top: 0em;
-  margin-bottom: 0em;
-  margin-left: 2em;
-}
-
-main.destinations ul > li, main.accomodations ul > li {
-  margin-top: 0.5em;
-  /*font-size: 1.4em;*/
-  list-style: none;
-}
-
-main.destinations span, main.accomodations span {
-  padding-right: 5px;
-}
-
-main.destinations p.delimiter, main.accomodations p.delimter {
-  margin-bottom: 0em;
-  margin-top: 0em;
-  /*line-height: 0;*/
-}
 
 /* ==========================================================================
   Archives
    ========================================================================== */
 
-main.archives.content p {
-  font-size: 1.2em;
-}
-
-main.archives.content div p, main.archives.content div h1 {
-  /*font-size: 1.1em;*/
-}
-
-
-
-/* ==========================================================================
-   Main Personal
-   ========================================================================== */
-
-div.container {
+main.archives div.container {
   max-width: 500px;
 }
 
-p.instruction {
-  letter-spacing: 5px;
-}
-
-table {
+main.archives table {
   width: 100%;
   table-layout: fixed;
   margin-bottom: 2em;
 }
 
-table caption {
+main.archives table caption {
   text-align: left;
   padding-bottom: 2em;
 }
 
-table th, table td {
+main.archives table th, main.archives table td {
   font-size: 1.2em;
   padding-bottom: 4px;
   padding-top: 4px;
 }
 
-table th {
+main.archives table th {
   font-weight: normal;
   padding-bottom: 5px;
 }
 
-table th.year, table th.type {
+main.archives table th.year, main.archives table th.type {
   width: 25%;
 }
 
-table th.type, table td.type {
+main.archives table th.type, main.archives table td.type {
   width: 20%;
   text-align: right;
 }
 
-table thead tr {
+main.archives table thead tr {
   text-align: left;
 } 
+
+
+/* ==========================================================================
+  Archives Content
+   ========================================================================== */
+
+main.archives.content article {
+  padding-top: 1em;
+}
+
+
+main.archives.content p {
+  font-size: 1.2em;
+}
+
+main.archives.content div.text {
+  margin-bottom: 5em;
+}
+
+main.archives.content div.info {
+  margin-bottom: 5em;
+}
+
+main.archives.content div.gallery {
+  display: inline-block;
+  margin-bottom: 2em;
+  max-width: 500px;  
+}
+
+main.archives.content div.gallery figure {
+  display: inline;
+}
+main.archives.content div.gallery figure a:hover {
+  /*opacity: 0.9;*/
+  border-bottom: none;
+}
+
+
+/* ==========================================================================
+  Archives
+   ========================================================================== */
+
 
 
 

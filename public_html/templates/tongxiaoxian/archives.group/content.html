@@ -9,12 +9,12 @@
 		<main class="archives content">
 
 			<article>
-			
-		        <br>
-
-				{archives_text}
-
-		        <br>
+				
+				{if archives_text}
+					<div class="text">
+						{archives_text}					
+					</div>
+				{/if}
 
 				<div class="info">
           			<time><i>{entry_date format="%M %Y"}</i></time>
@@ -22,8 +22,6 @@
           			<h1>{title}</h1>
           			<p>{categories backspace="3"}{category_name} / {/categories}</p>
 		        </div>
-
-		        <br>
 
 				<div class="gallery">
 

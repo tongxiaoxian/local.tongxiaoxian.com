@@ -26,7 +26,7 @@
                 <tr>      
                     <td>{entry_date format="%Y"}</td>
                     <td><a href="{title_permalink='archives/content'}">{title}</a></td>
-                    <td class="type">風景</td>
+                    <td class="type">{categories limit="1"}{category_name} {/categories}</td>
                 </tr>
             {/exp:channel:entries}
 

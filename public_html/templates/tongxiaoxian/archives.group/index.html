@@ -22,7 +22,7 @@
 
             <tbody>  
 
-                {exp:channel:entries channel="archives" disable="member_data" entry_id="not 21|22"}
+                {exp:channel:entries channel="archives" disable="member_data" entry_id="not 21|22|20"}
                     <tr>      
                         <td>{entry_date format="%Y"}</td>
                         <td><a href="{title_permalink='archives/content'}">{title}</a></td>
@@ -50,9 +50,10 @@
 
             <tbody>  
 
-                {exp:channel:entries channel="archives" disable="member_data" entry_id="21|22"}
+                {exp:channel:entries channel="archives" disable="member_data" entry_id="21|22|20"}
                     <tr>      
-                        <td>2009-2011</td>
+                        <td>{archives_period}</td>
+                        <!-- <td>2009-2011</td> -->
                         <td><a href="{title_permalink='archives/content'}">{title}</a></td>
                         <td class="type">{categories limit="1"}{category_name}{/categories}</td>
                     </tr>

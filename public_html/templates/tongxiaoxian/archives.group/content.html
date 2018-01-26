@@ -18,9 +18,11 @@
 
 				<div class="info">
           			<time><i>{entry_date format="%M %Y"}</i></time>
-          			<p>{archives_tag}</p>
+          			<p>{categories backspace="3" show="not 8|12|10"}{category_name} / {/categories} / {archives_tag}</p>
           			<h1>{title}</h1>
-          			<p>{categories backspace="3"}{category_name} / {/categories}</p>
+          			<p>{categories limit="1"}{category_name}{/categories} / 海航集團</p>
+
+
 		        </div>
 
 				<div class="gallery">

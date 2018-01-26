@@ -26,7 +26,7 @@
                     <tr>      
                         <td>{entry_date format="%Y"}</td>
                         <td><a href="{title_permalink='archives/content'}">{title}</a></td>
-                        <td class="type">{categories limit="1"}{category_name} {/categories}</td>
+                        <td class="type">{categories limit="1"}{category_name}{/categories}</td>
                     </tr>
                 {/exp:channel:entries}
 
@@ -54,7 +54,7 @@
                     <tr>      
                         <td>2009-2011</td>
                         <td><a href="{title_permalink='archives/content'}">{title}</a></td>
-                        <td class="type">雜誌</td>
+                        <td class="type">{categories limit="1"}{category_name}{/categories}</td>
                     </tr>
                 {/exp:channel:entries}
 

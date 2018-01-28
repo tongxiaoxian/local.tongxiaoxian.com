@@ -45,7 +45,7 @@ $config['sig_img_url'] = "http://local.tongxiaoxian.com/assets/images/signature_
 $config['sig_img_path'] = "/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/public_html/assets/images/signature_attachments/";
 
 $config['index_page'] = 'index.php';
-$config['multiple_sites_enabled'] = 'y';
+$config['multiple_sites_enabled'] = 'n';
 
 // END EE config items
 

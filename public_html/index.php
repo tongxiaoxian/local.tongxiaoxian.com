@@ -40,9 +40,9 @@
  * index.php)
  *
  */
-   $assign_to_config['site_name']  = 'tongxiaoxian'; 
-   $assign_to_config['cp_url'] = 'http://local.tongxiaoxian.com/admin.php'; 
-   $assign_to_config['site_url'] = 'http://local.tongxiaoxian.com/'; 
+   // $assign_to_config['site_name']  = 'tongxiaoxian'; 
+   // $assign_to_config['cp_url'] = 'http://local.tongxiaoxian.com/admin.php'; 
+   // $assign_to_config['site_url'] = 'http://local.tongxiaoxian.com/'; 
 
 
 /*

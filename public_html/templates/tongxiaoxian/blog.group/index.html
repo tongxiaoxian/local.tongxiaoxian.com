@@ -7,8 +7,9 @@
     {exp:channel:entries channel="blog" disable="member_data"}
       <article>      
           <h1>{title}</h1>
+          <time><i>{entry_date format="%M %d"}</i></time>
           <p>{blog_excerpt}</p>
-          <p><a href="{url_title_path='blog/content'}">Read More</a></p>
+          <p class="s"><a href="{url_title_path='blog/content'}">閱讀全文</a></p>
       </article>
     {/exp:channel:entries}
 

@@ -4,7 +4,7 @@
 
 <main class="blog content">
 
-    {exp:channel:entries channel="blog" disable="member_data"}
+    {exp:channel:entries channel="blog" disable="member_data" url_title="{segment_3}"}
 	
       <div>      
           <!-- <h1>{title}</h1> -->
@@ -13,6 +13,6 @@
     
     {/exp:channel:entries}
 
-	<p class="s m"><a href="{path="blog/index"}">返回</a></p>
+	<p class="s m"><a href="{path="blog/index#{segment_3}"}">返回</a></p>
 
-</main> 
+</main>

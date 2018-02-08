@@ -4,13 +4,13 @@
 
 <main class="blog">
 
-    {exp:channel:entries channel="blog" disable="member_data"}
+    {exp:channel:entries channel="blog" limit="1" disable="member_data"}
 
 	      <article>      
 	          <time><i>{entry_date format="%M %Y"}</i></time>
 	          <h1 id="{url_title}">{title}</h1>
 	          <p class="s">{blog_excerpt}</p>
-	          <p class="s"><a href="{url_title_path='blog/content'}">閱讀全文</a></p>
+	          <p class="s"><a href="{url_title_path='blog/content/{segment_2}'}">閱讀全文</a></p>
 	      </article>
 
 <!-- 	    {paginate}

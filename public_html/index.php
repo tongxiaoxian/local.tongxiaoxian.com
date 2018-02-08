@@ -107,6 +107,11 @@ $assign_to_config['upload_preferences'] = array(
         'name'        => 'archives',
         'server_path' => '/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/public_html/assets/images/uploads/archives/',
         'url'         => 'http://local.tongxiaoxian.com/assets/images/uploads/archives/'
+    ),
+    7 => array(
+        'name'        => 'blog',
+        'server_path' => '/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/public_html/assets/images/uploads/blog/',
+        'url'         => 'http://local.tongxiaoxian.com/assets/images/uploads/blog/'
     )    
 );
 

@@ -107,7 +107,12 @@ $assign_to_config['upload_preferences'] = array(
         'name'        => 'archives',                          // Display name in control panel
         'server_path' => '/var/www/html/tongxiaoxian.com/public_html/assets/images/uploads/archives/', // Server path to upload directory
         'url'         => 'http://www.tongxiaoxian.com/assets/images/uploads/archives/'      // URL of upload directory
-    )    
+    ),
+    7 => array(                                                            // ID of upload destination
+        'name'        => 'blog',                          // Display name in control panel
+        'server_path' => '/var/www/html/tongxiaoxian.com/public_html/assets/images/uploads/blog/', // Server path to upload directory
+        'url'         => 'http://www.tongxiaoxian.com/assets/images/uploads/blog/'      // URL of upload directory
+    )     
 );
 
 
